@@ -1,0 +1,39 @@
+#trend {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+#trendText {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  flex-grow: 1;
+}
+#trendCategory {
+  margin: 0;
+  font-size: 15px;
+}
+#trendName {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+}
+#trendCount {
+  font-size: 20px;
+  margin: 0;
+  color: gray;
+}
+#trend img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+.arabic {
+  text-align: right;
+}

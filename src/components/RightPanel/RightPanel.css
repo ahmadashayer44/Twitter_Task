@@ -1,0 +1,39 @@
+#rightPanel {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  background-color: black;
+  margin-left: auto;
+  margin-right: 5%;
+  align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#searchBox {
+  display: flex;
+  flex-direction: row;
+  background-color: #202427;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+#searchBox img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#searchBox input {
+  background-color: inherit;
+  border: none;
+  color: white;
+  width: 100%;
+  outline: none;
+}
