@@ -20,15 +20,9 @@ function Sidebar() {
         <img src={twitter} alt="twitter" />
       </div>
       <div className="SidebarButtons">
-        <SidebarButton src={home} alt="Home" />
-        <SidebarButton src={search} alt="Explore" />
-        <SidebarButton src={notification} alt="Notifications" />
-        <SidebarButton src={email} alt="Messages" />
-        <SidebarButton src={list} alt="Lists" />
-        <SidebarButton src={bookmark} alt="Bookmarks" />
-        <SidebarButton src={group} alt="Communities" />
-        <SidebarButton src={profile} alt="Profile" />
-        <SidebarButton src={more} alt="More" />
+        {sideBarButtons.map((button) => {
+          return <SidebarButton src={button.src} alt={button.alt} />;
+        })}
         <button className="postButton">Post</button>
       </div>
       <div id="sidebarFooter">
@@ -42,5 +36,42 @@ function Sidebar() {
     </div>
   );
 }
-
+const sideBarButtons = [
+  {
+    src: home,
+    alt: "Home",
+  },
+  {
+    src: search,
+    alt: "Explore",
+  },
+  {
+    src: notification,
+    alt: "Notifications",
+  },
+  {
+    src: email,
+    alt: "Messages",
+  },
+  {
+    src: list,
+    alt: "Lists",
+  },
+  {
+    src: bookmark,
+    alt: "Bookmarks",
+  },
+  {
+    src: group,
+    alt: "Communities",
+  },
+  {
+    src: profile,
+    alt: "Profile",
+  },
+  {
+    src: more,
+    alt: "More",
+  },
+];
 export default Sidebar;

@@ -1,0 +1,30 @@
+#trendsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin-left: auto;
+  margin-right: 15px;
+  border-radius: 20px;
+  background-color: #17181c;
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+}
+#trendsContainer h1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#showMore {
+  color: #3c6d97;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  margin-right: auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 15px;
+}
