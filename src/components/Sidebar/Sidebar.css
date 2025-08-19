@@ -1,0 +1,71 @@
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  border-right-color: rgb(75, 74, 74);
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+#twitterLogo {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#twitterLogo img {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+}
+
+.postButton {
+  margin-top: 15px;
+  background-color: #1d9bf0;
+  color: white;
+  width: 80%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+}
+#sidebarFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  gap: 7px;
+}
+.profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+#sidebarFooterText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  color: white;
+}
+#sidebarFooterText h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+#sidebarFooterText p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(78, 75, 75);
+}
+.moreImg {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 30px;
+}
