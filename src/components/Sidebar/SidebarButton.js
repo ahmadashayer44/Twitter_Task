@@ -1,7 +1,7 @@
-import "./SidebarButton.css";
+import SidebarCSS from "./SidebarButton.module.css";
 function SidebarButton({ src, alt }) {
   return (
-    <div className="SidebarButton">
+    <div className={SidebarCSS.SidebarButton}>
       <img src={src} alt={alt} />
       <label>{alt}</label>
     </div>

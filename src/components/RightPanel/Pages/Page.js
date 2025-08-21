@@ -1,10 +1,10 @@
-import "./Page.css";
+import PageCSS from "./Page.module.css";
 
 function Page({ imageSrc, title, name }) {
   return (
-    <div id="page">
+    <div id={PageCSS.page}>
       <img src={imageSrc} alt={title} />
-      <div id="pageText">
+      <div id={PageCSS.pageText}>
         <h3>{title}</h3>
         <p>{name}</p>
       </div>

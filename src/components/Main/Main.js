@@ -1,10 +1,14 @@
 import MainCSS from "./Main.module.css";
 import Profile from "./Profile";
-import Pages from "./Pages";
+import Page from "./Page";
 import logoImage from "../../assets/logo.svg";
 import coverImg from "../../assets//Main_assets/coverImg.png";
 import Posts from "./Posts";
 import userImage from "../../assets/Sidebar_assets/Ashayer.jpg";
+import Pages from "./Pages";
+import FCC from "../../assets/RightPanel_assets/FCC.webp";
+import TS from "../../assets/RightPanel_assets/TS.webp";
+import TCSS from "../../assets/RightPanel_assets/TCSS.png";
 import { useState } from "react";
 
 function Main() {
@@ -84,6 +88,19 @@ function Main() {
           pageName={pageDetails.pageName}
         />
       )}
+      <Pages>
+        {pages.map((page) => {
+          return (
+            <Page
+              imageSrc={page.imageSrc}
+              name={page.name}
+              title={page.title}
+              followers={page.followers}
+              description={page.description}
+            />
+          );
+        })}
+      </Pages>
     </div>
   );
 }
@@ -112,4 +129,30 @@ const postDetails = {
   repostNumber: "675",
   anayliticNumber: "1.1M",
 };
+const pages = [
+  {
+    imageSrc: FCC,
+    name: "@freeCodeCamp",
+    title: "freecodecamp.org",
+    followers: "Node.js and 9 others follow",
+    description:
+      "We're a community of millions of people who are building new skills and getting new jobs together. A 501(c)(3) public charity. Tweets by @abbeyrenn.",
+  },
+  {
+    imageSrc: TS,
+    name: "@typescript",
+    title: "TypeScript",
+    followers: "Node.js and 9 others follow",
+    description:
+      "TypeScript is a superset of JavaScript that compiles to plain JavaScript. Tweets by @abbeyrenn.",
+  },
+  {
+    imageSrc: TCSS,
+    name: "@tailwindcss",
+    title: "Tailwind CSS",
+    followers: "Node.js and 9 others follow",
+    description:
+      "The utility-first CSS framework for rapid UI development. Tweets by @abbeyrenn.",
+  },
+];
 export default Main;
