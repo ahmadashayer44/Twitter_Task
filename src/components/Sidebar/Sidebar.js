@@ -21,7 +21,9 @@ function Sidebar() {
       </div>
       <div className="SidebarButtons">
         {sideBarButtons.map((button) => {
-          return <SidebarButton src={button.src} alt={button.alt} />;
+          return (
+            <SidebarButton key={button.alt} src={button.src} alt={button.alt} />
+          );
         })}
         <button className="postButton">Post</button>
       </div>

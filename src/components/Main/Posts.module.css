@@ -1,0 +1,102 @@
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid rgb(75, 74, 74);
+  margin-bottom: 20px;
+}
+.post {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  align-items: center;
+  color: gray;
+}
+.post img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.post p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.postDetails {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.userImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.postContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  gap: 10px;
+  height: 30px;
+}
+.header:nth-child(1),
+.postText {
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 5px;
+  color: white;
+}
+.header p:nth-child(2),
+.header p:nth-child(3),
+.header p:nth-child(4) {
+  font-weight: 600;
+  color: gray;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.header img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.header button {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: 5px;
+}
+.postFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.postFooter img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.postFooter button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: gray;
+}

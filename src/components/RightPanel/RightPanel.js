@@ -5,7 +5,7 @@ import TrendsContainer from "./Trends/TrendsContainer";
 function RightPanel() {
   return (
     <div id="rightPanel">
-      <label for="search" id="searchBox">
+      <label htmlFor="search" id="searchBox">
         <img src={serach} alt="search" />
         <input id="search" type="text" placeholder="Search" />
       </label>
