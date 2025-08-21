@@ -11,17 +11,35 @@ import TS from "../../assets/RightPanel_assets/TS.webp";
 import TCSS from "../../assets/RightPanel_assets/TCSS.png";
 import { useState } from "react";
 
-function Main() {
+function Main({ showSideBar, setShowSidebar }) {
   const [active, setActive] = useState(1);
   return (
     <div className={MainCSS.mainContainer}>
-      <header>
-        <button className={MainCSS.backButton}>←</button>
-        <div className={MainCSS.headerContent}>
-          <h1 className={MainCSS.pageName}>{pageDetails.pageName}</h1>
-          <p className={MainCSS.postsNumber}>{pageDetails.postsNumber} posts</p>
-        </div>
-      </header>
+      {showSideBar && (
+        <div
+          className={MainCSS.overlay}
+          onClick={() => setShowSidebar(false)}
+        />
+      )}
+      {!showSideBar && (
+        <header>
+          <button
+            className={MainCSS.profileSideButton}
+            onClick={(e) => setShowSidebar(!showSideBar)}
+          >
+            {" "}
+            <img src={userImage} className={MainCSS.userImage} alt="logo" />
+          </button>
+          <button className={MainCSS.backButton}>←</button>
+          <div className={MainCSS.headerContent}>
+            <h1 className={MainCSS.pageName}>{pageDetails.pageName}</h1>
+            <p className={MainCSS.postsNumber}>
+              {pageDetails.postsNumber} posts
+            </p>
+          </div>
+        </header>
+      )}
+
       <Profile
         coverImg={pageDetails.coverImg}
         profileImg={pageDetails.profileImg}
@@ -92,6 +110,7 @@ function Main() {
         {pages.map((page) => {
           return (
             <Page
+              key={page.name}
               imageSrc={page.imageSrc}
               name={page.name}
               title={page.title}

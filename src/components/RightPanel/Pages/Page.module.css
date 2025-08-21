@@ -10,14 +10,15 @@
 #pageText {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 #pageText h3 {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 5px;
   margin: 0;
 }
 #pageText p {
-  font-size: 15px;
+  font-size: 13px;
   color: gray;
   margin: 0;
 }
@@ -25,7 +26,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 #page button {
   border-radius: 50px;

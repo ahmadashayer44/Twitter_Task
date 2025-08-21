@@ -140,3 +140,33 @@
   color: white;
   margin-right: 6px;
 }
+
+@media screen and (max-width: 800px) {
+  .profileImg {
+    width: 200px;
+    height: 200px;
+  }
+  .rightSideButtons img {
+    width: 18px;
+    height: 18px;
+  }
+  .followButton {
+    font-size: 18px;
+    padding: 18px;
+  }
+  .profileImgWidthButtonsContainer {
+    flex-direction: column;
+  }
+  .rightSideButtons {
+    margin-left: 0;
+  }
+  .followButton {
+    margin-right: 0;
+  }
+  .coverImg {
+    height: 300px;
+  }
+  .profileImg {
+    margin-top: -20%;
+  }
+}
