@@ -7,6 +7,7 @@ function TrendsContainer() {
       {Trends.map((trend) => {
         return (
           <Trend
+            key={trend.trend}
             category={trend.category}
             trend={trend.trend}
             count={trend.count}

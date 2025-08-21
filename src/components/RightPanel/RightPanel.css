@@ -1,7 +1,7 @@
 #rightPanel {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 25%;
   height: 100vh;
   background-color: black;
   margin-left: auto;
@@ -11,6 +11,7 @@
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin-left: 30px;
 }
 
 #searchBox {
