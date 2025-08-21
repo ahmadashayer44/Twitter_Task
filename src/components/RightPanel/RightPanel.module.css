@@ -38,3 +38,8 @@
   width: 100%;
   outline: none;
 }
+@media screen and (max-width: 1700px) {
+  #rightPanel {
+    display: none;
+  }
+}

@@ -13,9 +13,15 @@ import home from "../../assets/Sidebar_assets/home.png";
 import twitter from "../../assets/Sidebar_assets/twitter.png";
 import group from "../../assets/Sidebar_assets/group.png";
 import SidebarButton from "./SidebarButton";
-function Sidebar() {
+function Sidebar({ showSidebar }) {
   return (
-    <div id={SidebarCSS.sidebar}>
+    <div
+      id={SidebarCSS.sidebar}
+      className={`${SidebarCSS.sidebar} ${
+        showSidebar ? SidebarCSS.show : SidebarCSS.unShow
+      }`}
+    >
+      {" "}
       <div id={SidebarCSS.twitterLogo}>
         <img src={twitter} alt="twitter" />
       </div>

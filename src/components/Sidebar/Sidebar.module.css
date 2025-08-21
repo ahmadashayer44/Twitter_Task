@@ -7,6 +7,7 @@
   border-right-color: rgb(75, 74, 74);
   border-right-width: 1px;
   border-right-style: solid;
+  transition: all 0.7s ease-in-out;
 }
 #twitterLogo {
   margin-top: 10px;
@@ -56,6 +57,11 @@
   margin: 0;
   font-size: 17px;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100px;
 }
 #sidebarFooterText p {
   margin: 0;
@@ -68,4 +74,18 @@
   height: 20px;
   margin-left: auto;
   margin-right: 30px;
+}
+
+.sidebar.unShow {
+  left: -300px;
+}
+@media screen and (max-width: 1700px) {
+  .sidebar {
+    position: absolute;
+    left: -300px;
+    z-index: 1000;
+  }
+}
+.sidebar.show {
+  left: 0;
 }
