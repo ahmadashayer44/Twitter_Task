@@ -1,4 +1,4 @@
-import "./Trend.css";
+import TrendCSS from "./Trend.module.css";
 import more from "../../../assets/RightPanel_assets/more.png";
 function Trend({ category, trend, count }) {
   let editedTrend = trend;
@@ -6,15 +6,15 @@ function Trend({ category, trend, count }) {
   const isArabic = /\p{Script=Arabic}/u.test(editedTrend.charAt(0));
   let classArabic = isArabic ? "arabic" : "";
   return (
-    <div id="trend">
-      <div id="trendText">
-        <h3 className={classArabic} id="trendCategory">
+    <div id={TrendCSS.trend}>
+      <div id={TrendCSS.trendText}>
+        <h3 className={classArabic} id={TrendCSS.trendCategory}>
           {category}
         </h3>
-        <p className={classArabic} id="trendName">
+        <p className={classArabic} id={TrendCSS.trendName}>
           {trend}
         </p>
-        <p id="trendCount">{count} posts</p>
+        <p id={TrendCSS.trendCount}>{count} posts</p>
       </div>
       {!isArabic && <img src={more} alt={more} />}
     </div>

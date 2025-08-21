@@ -1,11 +1,11 @@
 import serach from "../../assets/RightPanel_assets/loupe.png";
-import "./RightPanel.css";
+import RightPanelCSS from "./RightPanel.module.css";
 import PageContainer from "./Pages/PagesContainer";
 import TrendsContainer from "./Trends/TrendsContainer";
 function RightPanel() {
   return (
-    <div id="rightPanel">
-      <label htmlFor="search" id="searchBox">
+    <div id={RightPanelCSS.rightPanel}>
+      <label htmlFor="search" id={RightPanelCSS.searchBox}>
         <img src={serach} alt="search" />
         <input id="search" type="text" placeholder="Search" />
       </label>

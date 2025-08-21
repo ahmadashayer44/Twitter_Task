@@ -1,0 +1,72 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.followers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+.profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.followers p {
+  font-size: 15px;
+  color: gray;
+  margin: 0;
+}
+.pageText {
+  display: flex;
+  flex-direction: column;
+}
+.pageText h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin: 0;
+}
+.name {
+  font-size: 15px;
+  color: gray;
+  margin: 0;
+}
+.pageImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.followButton {
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  width: 90px;
+  margin-left: auto;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+import SidebarCSS from "./Sidebar.module.css";
 import Ashayer from "../../assets/Sidebar_assets/Ashayer.jpg";
 import bookmark from "../../assets/Sidebar_assets/bookmark-white.png";
 import notification from "../../assets/Sidebar_assets/notification-bell.png";
@@ -15,25 +15,25 @@ import group from "../../assets/Sidebar_assets/group.png";
 import SidebarButton from "./SidebarButton";
 function Sidebar() {
   return (
-    <div id="sidebar">
-      <div id="twitterLogo">
+    <div id={SidebarCSS.sidebar}>
+      <div id={SidebarCSS.twitterLogo}>
         <img src={twitter} alt="twitter" />
       </div>
-      <div className="SidebarButtons">
+      <div className={SidebarCSS.SidebarButtons}>
         {sideBarButtons.map((button) => {
           return (
             <SidebarButton key={button.alt} src={button.src} alt={button.alt} />
           );
         })}
-        <button className="postButton">Post</button>
+        <button className={SidebarCSS.postButton}>Post</button>
       </div>
-      <div id="sidebarFooter">
-        <img className="profileImg" src={Ashayer} alt="Ashayer" />
-        <div id="sidebarFooterText">
+      <div id={SidebarCSS.sidebarFooter}>
+        <img className={SidebarCSS.profileImg} src={Ashayer} alt="Ashayer" />
+        <div id={SidebarCSS.sidebarFooterText}>
           <h3>Ahmad Ashayer</h3>
           <p>@ahmadashayer44</p>
         </div>
-        <img className="moreImg" src={moreWithNoBorder} alt="More" />
+        <img className={SidebarCSS.moreImg} src={moreWithNoBorder} alt="More" />
       </div>
     </div>
   );
