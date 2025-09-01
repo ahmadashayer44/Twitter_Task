@@ -19,12 +19,10 @@
   align-items: center;
   height: 50px;
   padding: 0;
-  position: fixed;
   background-color: black;
-  z-index: 2000;
   width: 100%;
-  animation: show 1.6s ease-in-out;
-  transition: all 1.6s ease-in-out;
+  animation: show 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 15px 24px 15px 24px;
 }
 .backButton {
